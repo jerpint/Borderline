@@ -1,4 +1,4 @@
-
+import sys
 import numpy as np
 import librosa
 from essentia.standard import *
@@ -38,7 +38,7 @@ def mel128_full(audio_signal,Fs = 44100):  # MEL SPECTROGRAM, 128 bins over enti
 
 labels = [ 'air_conditioner','car_horn','children_playing','dog_bark','drilling','engine_idling','gun_shot','jackhammer','siren','street_music']
 
-filename = '/home/jerpint/Dropbox/urbansound/phone_recordings/categories/street_music/street_music.wav'
+filename = str(sys.argv[1]) # get the filename from the terminal input
 
 
 
